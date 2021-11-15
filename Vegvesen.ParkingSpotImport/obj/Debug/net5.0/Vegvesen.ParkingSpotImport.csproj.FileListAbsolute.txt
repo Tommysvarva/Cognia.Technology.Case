@@ -1,0 +1,16 @@
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.csproj.AssemblyReference.cache
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.AssemblyInfoInputs.cache
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.AssemblyInfo.cs
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.csproj.CoreCompileInputs.cache
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.exe
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.deps.json
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.runtimeconfig.json
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.runtimeconfig.dev.json
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\ref\Vegvesen.ParkingSpotImport.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\bin\Debug\net5.0\Vegvesen.ParkingSpotImport.pdb
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\ref\Vegvesen.ParkingSpotImport.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.pdb
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkingSpotImport\obj\Debug\net5.0\Vegvesen.ParkingSpotImport.genruntimeconfig.cache
