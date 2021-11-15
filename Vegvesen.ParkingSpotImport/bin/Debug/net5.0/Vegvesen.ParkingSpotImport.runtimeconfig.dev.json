@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\tasec\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tasec\\.nuget\\packages"
-    ]
-  }
-}
