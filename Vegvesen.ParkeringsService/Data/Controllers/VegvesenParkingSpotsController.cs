@@ -35,9 +35,9 @@ namespace Vegvesen.ParkeringsService.Controllers
         {
             try
             {
-                _logger.Information($"Running method: RunImportAsync at VegvesenParkingSpotsController");
+                //_logger.Information($"Exce RunImportAsync at VegvesenParkingSpotsController");
                 var succes = await _service.RunImportsAsync();
-                _logger.Information($"Completed method: RunImportAsync at VegvesenParkingSpotsController.");
+                //_logger.Information($"Completed method: RunImportAsync at VegvesenParkingSpotsController.");
 
                 return Ok();
             }
@@ -50,23 +50,25 @@ namespace Vegvesen.ParkeringsService.Controllers
 
         [HttpGet]
         [Route("parkingspots/get")]
-        public ActionResult GetParkingSpots(int facilityId1, int facilityId2)
-        {
+        public  IActionResult GetParkingSpots([FromQuery]List<int> facilityIds)
+         {
+            var request = Request.Headers;
             try
             {
-                _logger.Information($"Running method: GetParkingSpots({facilityId1},{facilityId2}) at VegvesenParkingSpotsController");
-                var parkingSpots = _parkingSpotRepository.GetAllParkingSpotsByFacilities(facilityId1, facilityId2);
+                _logger.Information($"GET Request starting GetParkingSpots({facilityIds})");
+                var parkingSpots = _parkingSpotRepository.GetAllParkingSpotsByFacilities(facilityIds);
 
                 if(parkingSpots.Count() < 1)
                 {
                     return NotFound();
                 }
 
+                _logger.Information($"GET Request complete GetParkingSpots({facilityIds})");
                 return Ok(parkingSpots);
             }
             catch(Exception ex)
             {
-                _logger.Error(ex, "Something went wrong while running method: GetParkingSpots at VegvesenParkingSpotsController");
+                _logger.Error(ex, $"GET Reques failed at GetParkingSpots{facilityIds}");
                 return new StatusCodeResult(500);
             }
         }

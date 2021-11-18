@@ -31,23 +31,43 @@ namespace Vegvesen.ParkeringsService.Data
             return _context.ParkingSpots.ToList();
         }
 
-        public IEnumerable<ParkingSpot> GetAllParkingSpotsByFacilities(int facilityId1, int facilityId2)
+        //public IEnumerable<ParkingSpot> GetAllParkingSpotsByFacilities(int facilityId1, int facilityId2)
+        //{
+        //    var parkingSpotFacilities = _context.ParkingSpotFacilities.Where(x => x.FacilityId == facilityId1 || x.FacilityId == facilityId2).ToList();
+
+        //    var matchingSpots = new List<ParkingSpot>();
+        //    foreach (var facilitySpot in parkingSpotFacilities)
+        //    {
+        //        var spotFacilties = parkingSpotFacilities.Where(x => x.SpotId == facilitySpot.SpotId);
+        //        if (spotFacilties.Count() > 1)
+        //        {
+        //            var spot = GetParkingSpot(facilitySpot.SpotId);
+        //            matchingSpots.Add(spot);
+        //        }
+        //    }
+        //    matchingSpots = matchingSpots.Distinct().ToList();
+        //    return matchingSpots;
+        //}
+        public IEnumerable<ParkingSpot> GetAllParkingSpotsByFacilities(List<int> facilityIds)
         {
-            var parkingSpotFacilities = _context.ParkingSpotFacilities.Where(x => x.FacilityId == facilityId1 || x.FacilityId == facilityId2).ToList();
+            var parkingSpots = _context.ParkingSpots;
+            var spotFacilities = _context.ParkingSpotFacilities
+                .Where(x => facilityIds
+                .Contains(x.FacilityId))
+                .Include(x => x.Spot).ToList()
+                .GroupBy(x => x.Spot).ToList();
 
             var matchingSpots = new List<ParkingSpot>();
-            foreach(var facilitySpot in parkingSpotFacilities)
+            foreach (var spot in spotFacilities)
             {
-                var spotFacilties = parkingSpotFacilities.Where(x => x.SpotId == facilitySpot.SpotId);
-                if (spotFacilties.Count() > 1 )
+                if(spot.Count() == facilityIds.Count())
                 {
-                    var spot = GetParkingSpot(facilitySpot.SpotId);
-                    matchingSpots.Add(spot);
+                    matchingSpots.Add(spot.Key);
                 }
             }
-            matchingSpots = matchingSpots.Distinct().ToList();
+
             return matchingSpots;
-            
+           
         }
 
         public ParkingSpot GetParkingSpot(int id)

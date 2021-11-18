@@ -94,3 +94,8 @@ C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilo
 C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilog.Sinks.Console.dll
 C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
 C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\System.Web.Http.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilog.Enrichers.Context.dll
+C:\GIT\Cognia.Technology.Case\Vegvesen.ParkeringsService\bin\Debug\net5.0\Serilog.Enrichers.ExceptionData.dll

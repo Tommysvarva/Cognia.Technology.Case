@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.12, )"
@@ -78,9 +82,17 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "Serilog.Enrichers.Context": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "Serilog.Enrichers.Environment": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Serilog.Enrichers.ExceptionData": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Serilog.Sinks.File": {
               "target": "Package",

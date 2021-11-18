@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Vegvesen.ParkeringsService.Data;
 using Vegvesen.ParkeringsService.Models;
@@ -34,7 +35,9 @@ namespace Vegvesen.ParkeringsService
         {
             services.AddDbContext<cognia_technology_caseContext>(opt => opt.UseSqlServer
                (Configuration.GetConnectionString("MainConnection")));
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x =>
+            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddSwaggerGen(c =>

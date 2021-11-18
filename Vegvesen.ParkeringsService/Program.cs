@@ -22,9 +22,12 @@ namespace Vegvesen.ParkeringsService
             .UseSerilog((context, configuration) =>
             {
                 configuration.Enrich.FromLogContext()
-                .Enrich.WithMachineName()
                  .WriteTo.File(@"c:\log\log.txt", rollingInterval: RollingInterval.Day)
+                 // could swap for log to ElasticSearch
                  .Enrich.WithProperty("Environment", context.HostingEnvironment.EnvironmentName)
+                 .Enrich.WithEnvironmentUserName()
+                 .Enrich.WithExceptionData()
+                 .MinimumLevel.Debug()
                  .ReadFrom.Configuration(context.Configuration);
             })
                 .ConfigureWebHostDefaults(webBuilder =>

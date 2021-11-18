@@ -11,7 +11,7 @@ namespace Vegvesen.ParkeringsService.Data
         bool SaveChanges();
         void CreateParkingSpot(ParkingSpot parkingSpot);
         IEnumerable<ParkingSpot> GetAllParkingSpots();
-        IEnumerable<ParkingSpot> GetAllParkingSpotsByFacilities(int facilityId1, int facilityId2);
+        IEnumerable<ParkingSpot> GetAllParkingSpotsByFacilities(List<int> facilityIds);
         ParkingSpot GetParkingSpot(int id);
     }
 }
