@@ -22,7 +22,7 @@ Spørsmål 1 Hvilke data om en bruker og brukeraktivitet ville du logget og hvor
 Lag et design utkast/konsept du ville benyttet for å logge brukeraktivitet i en mikrotjenestearkitektur?
 
 Men vil først og fremst behandle dette forskjellig utifra loglevel typ [information] [warning] [error] [critical].
-Ta information f.eks [Tid] [loglevel] [HTTPVERB] [Action] [CustomerToken/noen form for Id]
+Ta information f.eks [Tid] [loglevel] [HTTPVERB] [Service?] [Action] [CustomerToken/noen form for Id]
 Error eks: [tid] [logvel] [exception] 
 
 
